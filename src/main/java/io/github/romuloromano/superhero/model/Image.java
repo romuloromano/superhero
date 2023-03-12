@@ -30,8 +30,8 @@ public class Image {
 
     @Override
     public String toString() {
-        return "Image\n" +
-                "Name=" + name + '\n' +
-                "Url Image=" + urlImage + '\n';
+        return "**Super Hero - Image**\n" +
+                "Name= " + name + '\n' +
+                "Url Image= " + urlImage + '\n';
     }
 }

@@ -35,8 +35,8 @@ public class Work {
 
     @Override
     public String toString() {
-        return "Work\n" +
-                "Occupation=" + occupation + '\n' +
-                "Base Of Operation=" + baseOfOperation + '\n';
+        return "**Super Hero - Work**\n" +
+                "Occupation= " + occupation + '\n' +
+                "Base Of Operation= " + baseOfOperation + '\n';
     }
 }

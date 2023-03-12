@@ -65,14 +65,14 @@ public class Biography {
 
     @Override
     public String toString() {
-        return "Super Hero - Biography\n" +
-                "Name='" + name + '\n' +
-                "Full Name=" + fullName + '\n' +
-                "Alter Egos=" + alterEgos + '\n' +
-                "Aliases=" + aliases + '\n' +
-                "Place Of Birth=" + placeOfBirth + '\n' +
-                "First Appearance=" + firstAppearance + '\n' +
-                "Publisher=" + publisher + '\n' +
-                "Alignment=" + alignment + '\n';
+        return "**Super Hero - Biography**\n" +
+                "Name= " + name + '\n' +
+                "Full Name= " + fullName + '\n' +
+                "Alter Egos= " + alterEgos + '\n' +
+                "Aliases= " + aliases + '\n' +
+                "Place Of Birth= " + placeOfBirth + '\n' +
+                "First Appearance= " + firstAppearance + '\n' +
+                "Publisher= " + publisher + '\n' +
+                "Alignment= " + alignment + '\n';
     }
 }

@@ -59,13 +59,13 @@ public class Appearance {
 
     @Override
     public String toString() {
-        return "Super HeroAppearance" + '\n' +
-                "Name=" + name + '\n' +
-                "Gender='" + gender + '\n' +
-                "Race='" + race + '\n' +
-                "Height='" + height + '\n' +
-                "Weight='" + weight + '\n' +
-                "Eye Color='" + eyeColor + '\n' +
-                "Hair Color='" + hairColor + '\n';
+        return "**Super Hero - Appearance**\n" +
+                "Name= " + name + '\n' +
+                "Gender= " + gender + '\n' +
+                "Race= " + race + '\n' +
+                "Height= " + height + '\n' +
+                "Weight= " + weight + '\n' +
+                "Eye Color= " + eyeColor + '\n' +
+                "Hair Color= " + hairColor + '\n';
     }
 }

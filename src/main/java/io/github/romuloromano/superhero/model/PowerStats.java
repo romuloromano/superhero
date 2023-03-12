@@ -60,7 +60,7 @@ public class PowerStats {
 
     @Override
     public String toString() {
-        return "Super Hero - Power Stats\n" +
+        return "**Super Hero - Power Stats**\n" +
                 "Name= " + name + '\n' +
                 "Intelligence= " + intelligence + '\n' +
                 "Strength= " + strength + '\n' +

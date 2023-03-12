@@ -35,9 +35,9 @@ public class Connections {
 
     @Override
     public String toString() {
-        return "Connections\n" +
-                "Name=" + name + '\n' +
-                "Group Affiliation=" + groupAffiliation + '\n' +
-                "Relatives='" + Relatives + '\n';
+        return "**Super Hero - Connections**\n" +
+                "Name= " + name + '\n' +
+                "Group Affiliation= " + groupAffiliation + '\n' +
+                "Relatives= " + Relatives + '\n';
     }
 }

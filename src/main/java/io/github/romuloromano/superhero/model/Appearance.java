@@ -1,26 +1,26 @@
 package io.github.romuloromano.superhero.model;
 
+import java.util.List;
+
 public class Appearance {
 
     private int id;
     private String name;
     private String gender;
     private String race;
-    private String height;
-    private String weight;
+    private List<String> height;
+    private List<String> weight;
     private String eyeColor;
     private String hairColor;
 
     public Appearance() {
     }
 
-    public Appearance(int id, String name, String gender, String race, String height, String weight, String eyeColor, String hairColor) {
+    public Appearance(int id, String name, String gender, String race, String eyeColor, String hairColor) {
         this.id = id;
         this.name = name;
         this.gender = gender;
         this.race = race;
-        this.height = height;
-        this.weight = weight;
         this.eyeColor = eyeColor;
         this.hairColor = hairColor;
     }
@@ -41,11 +41,11 @@ public class Appearance {
         return race;
     }
 
-    public String getHeight() {
+    public List<String> getHeight() {
         return height;
     }
 
-    public String getWeight() {
+    public List<String> getWeight() {
         return weight;
     }
 

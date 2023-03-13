@@ -1,12 +1,15 @@
 package io.github.romuloromano.superhero.model;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class Biography {
 
     private int id;
     private String name;
     private String fullName;
     private String alterEgos;
-    private String aliases;
+    private List<String> aliases;
     private String placeOfBirth;
     private String firstAppearance;
     private String publisher;
@@ -15,12 +18,11 @@ public class Biography {
     public Biography() {
     }
 
-    public Biography(int id, String name, String fullName, String alterEgos, String aliases, String placeOfBirth, String firstAppearance, String publisher, String alignment) {
+    public Biography(int id, String name, String fullName, String alterEgos, String placeOfBirth, String firstAppearance, String publisher, String alignment) {
         this.id = id;
         this.name = name;
         this.fullName = fullName;
         this.alterEgos = alterEgos;
-        this.aliases = aliases;
         this.placeOfBirth = placeOfBirth;
         this.firstAppearance = firstAppearance;
         this.publisher = publisher;
@@ -43,7 +45,7 @@ public class Biography {
         return alterEgos;
     }
 
-    public String getAliases() {
+    public List<String> getAliases() {
         return aliases;
     }
 
@@ -69,7 +71,7 @@ public class Biography {
                 "Name= " + name + '\n' +
                 "Full Name= " + fullName + '\n' +
                 "Alter Egos= " + alterEgos + '\n' +
-                "Aliases= " + aliases + '\n' +
+                "Aliases= " + Arrays.toString(aliases.toArray()) + '\n' +
                 "Place Of Birth= " + placeOfBirth + '\n' +
                 "First Appearance= " + firstAppearance + '\n' +
                 "Publisher= " + publisher + '\n' +

@@ -1,5 +1,8 @@
 package io.github.romuloromano.superhero.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.google.gson.annotations.SerializedName;
+
 import java.util.Arrays;
 import java.util.List;
 
@@ -7,10 +10,14 @@ public class Biography {
 
     private int id;
     private String name;
+    @SerializedName("full-name")
     private String fullName;
+    @SerializedName("alter-egos")
     private String alterEgos;
     private List<String> aliases;
+    @SerializedName("place-of-birth")
     private String placeOfBirth;
+    @SerializedName("first-appearance")
     private String firstAppearance;
     private String publisher;
     private String alignment;

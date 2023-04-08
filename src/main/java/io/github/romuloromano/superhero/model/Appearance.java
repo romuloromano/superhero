@@ -1,5 +1,7 @@
 package io.github.romuloromano.superhero.model;
 
+import com.google.gson.annotations.SerializedName;
+
 import java.util.List;
 
 public class Appearance {
@@ -10,7 +12,9 @@ public class Appearance {
     private String race;
     private List<String> height;
     private List<String> weight;
+    @SerializedName("eye-color")
     private String eyeColor;
+    @SerializedName("hair-color")
     private String hairColor;
 
     public Appearance() {

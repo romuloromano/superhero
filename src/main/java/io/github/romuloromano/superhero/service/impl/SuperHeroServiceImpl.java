@@ -1,4 +1,4 @@
-package io.github.romuloromano.superhero.service;
+package io.github.romuloromano.superhero.service.impl;
 
 import com.google.gson.Gson;
 import io.github.romuloromano.superhero.model.*;
@@ -6,9 +6,9 @@ import io.github.romuloromano.superhero.model.*;
 import static io.github.romuloromano.superhero.util.ConvertJsonToStringUtil.getJsonToString;
 
 
-public class SuperHeroService {
+public class SuperHeroServiceImpl {
 
-    private static String WEBSERVICE = "https://superheroapi.com/api/5844502089001507/";
+    private final static String WEBSERVICE = "https://superheroapi.com/api/5844502089001507/";
     final static String POWERSTATS = "/powerstats";
     final static String BIOGRAPHY = "/biography";
     final static String APPEARANCE = "/appearance";

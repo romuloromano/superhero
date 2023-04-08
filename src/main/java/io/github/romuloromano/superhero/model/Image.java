@@ -1,10 +1,12 @@
 package io.github.romuloromano.superhero.model;
 
+import com.google.gson.annotations.SerializedName;
+
 public class Image {
 
     private int id;
     private String name;
-
+    @SerializedName("url-image")
     private String urlImage;
 
     public Image() {

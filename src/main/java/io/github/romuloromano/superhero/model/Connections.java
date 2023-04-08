@@ -1,11 +1,14 @@
 package io.github.romuloromano.superhero.model;
 
+import com.google.gson.annotations.SerializedName;
+
 public class Connections {
 
     private int id;
     private String name;
+    @SerializedName("group-affiliation")
     private String groupAffiliation;
-    private String Relatives;
+    private String relatives;
 
     public Connections() {
     }
@@ -14,7 +17,7 @@ public class Connections {
         this.id = id;
         this.name = name;
         this.groupAffiliation = groupAffiliation;
-        Relatives = relatives;
+        this.relatives = relatives;
     }
 
     public int getId() {
@@ -30,7 +33,7 @@ public class Connections {
     }
 
     public String getRelatives() {
-        return Relatives;
+        return relatives;
     }
 
     @Override
@@ -38,6 +41,6 @@ public class Connections {
         return "**Super Hero - Connections**\n" +
                 "Name= " + name + '\n' +
                 "Group Affiliation= " + groupAffiliation + '\n' +
-                "Relatives= " + Relatives + '\n';
+                "Relatives= " + relatives + '\n';
     }
 }

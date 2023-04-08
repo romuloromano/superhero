@@ -1,7 +1,8 @@
 package io.github.romuloromano.superhero;
 
 import io.github.romuloromano.superhero.model.*;
-import io.github.romuloromano.superhero.service.SuperHeroService;
+import io.github.romuloromano.superhero.service.impl.SuperHeroServiceImpl;
+import org.apache.log4j.Logger;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -11,6 +12,8 @@ import java.util.Scanner;
 public class SuperheroApplication {
 
     public static void main(String[] args) throws Exception {
+
+        Logger logger = Logger.getLogger(SuperheroApplication.class);
 
         SpringApplication.run(SuperheroApplication.class, args);
 
@@ -40,42 +43,42 @@ public class SuperheroApplication {
                 case 1:
                     System.out.print("Enter the hero number: ");
                     String hero = new Scanner(System.in).nextLine();
-                    PowerStats powerStats = SuperHeroService.findByIdSuperheroPowerStats(hero);
+                    PowerStats powerStats = SuperHeroServiceImpl.findByIdSuperheroPowerStats(hero);
                     System.out.println(powerStats.toString());
                     break;
 
                 case 2:
                     System.out.println("Enter the hero number: ");
                     hero = new Scanner(System.in).nextLine();
-                    Biography biography = SuperHeroService.findByIdSuperheroBiography(hero);
+                    Biography biography = SuperHeroServiceImpl.findByIdSuperheroBiography(hero);
                     System.out.println(biography.toString());
                     break;
 
                 case 3:
                     System.out.println("Enter the hero number: ");
                     hero = new Scanner(System.in).nextLine();
-                    Appearance appearance = SuperHeroService.findByIdSuperheroAppearance(hero);
+                    Appearance appearance = SuperHeroServiceImpl.findByIdSuperheroAppearance(hero);
                     System.out.println(appearance.toString());
                     break;
 
                 case 4:
                     System.out.println("Enter the hero number: ");
                     hero = new Scanner(System.in).nextLine();
-                    Work work = SuperHeroService.findByIdSuperheroWork(hero);
+                    Work work = SuperHeroServiceImpl.findByIdSuperheroWork(hero);
                     System.out.println(work.toString());
                     break;
 
                 case 5:
                     System.out.println("Enter the hero number: ");
                     hero = new Scanner(System.in).nextLine();
-                    Connections connections = SuperHeroService.findByIdSuperheroConnections(hero);
+                    Connections connections = SuperHeroServiceImpl.findByIdSuperheroConnections(hero);
                     System.out.println(connections.toString());
                     break;
 
                 case 6:
                     System.out.println("Enter the hero number: ");
                     hero = new Scanner(System.in).nextLine();
-                    Image image = SuperHeroService.findByIdSuperheroImage(hero);
+                    Image image = SuperHeroServiceImpl.findByIdSuperheroImage(hero);
                     System.out.println(image.toString());
                     break;
             }

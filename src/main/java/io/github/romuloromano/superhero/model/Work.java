@@ -1,10 +1,13 @@
 package io.github.romuloromano.superhero.model;
 
+import com.google.gson.annotations.SerializedName;
+
 public class Work {
 
     private int id;
     private String name;
     private String occupation;
+    @SerializedName("base-of-operation")
     private String baseOfOperation;
 
     public Work() {
